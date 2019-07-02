@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<form style="width: 210px">
+    <h2>Dictionary</h2>
+    <input style="width: 200px" type="text" id="ChangeVIE" placeholder="NhapTiengViet" ><br>
+    <hr>
+    <button type="button" onclick="check_TV()">Click</button>
+</form>
+<script>
+    function check_TV() {
+        let wordVie = ["tao", "chuoi", "ngo", "xoai"];
+        let wordEng = ["apple", "banana", "corn", "mango"];
+        let search = document.getElementById("ChangeVIE").value;
+        for (let i = 0; i < wordEng.length; i++) {
+            if(search==wordEng[i]){
+                alert(wordVie[i]);
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

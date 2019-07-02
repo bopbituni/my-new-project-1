@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap the case of each character of a string</title>
+</head>
+<body>
+<script>
+    let str = window.prompt("Nhap vao : ");
+    let UPPER ='ABCDEFGHIKLMNOPQRSTUVWXYZ';
+    let LOWER ='abcdefghiklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0;x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase())
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

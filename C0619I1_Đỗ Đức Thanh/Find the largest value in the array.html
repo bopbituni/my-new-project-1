@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the largest value in the array</title>
+</head>
+<body>
+<script>
+    let x =[-3, 5, 1, 3, 2, 10];
+    let max = [0];
+    let index = 0;
+    for(i=1; i<x.length; i++){
+        if(x[i]>x[max]){
+            max = x[i];
+            index = i;
+        }
+    }
+    alert("max :  " + max + " at position " + index);
+</script>
+</body>
+</html>
